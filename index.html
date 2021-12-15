@@ -6,24 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #ident01 {color:aqua}
-        #ident02 {color:aquamarine}
-        .class03 {color:blue}
-        .class04 {color:blueviolet}
+        div {color:lightseagreen}
+        h2 {font-family:serif; font-size: 14;}
+        #ident01 {font-size: 10pt;color:aqua}
+        #ident02 {font-size: 20pt;color:aquamarine}
+        .class03 {font-size: 12pt;color:blue}
+        .class04 {font-size: 22pt;color:blueviolet}
         .class05 {font-family: Verdana, Arial, Helvetica, sans-serif; 
-                 font-size: 11pt; /* Размер шрифта в пунктах */ 
-                }
-        .class06 {color:brown}
-        .class07 {color:crimson}
-        .class08 {color:darkgoldenrod}
-        .class09.class11{color:chartreuse}
-        .class10 .class12{color:coral}
-        p {color:darkmagenta}
+                 font-size: 14pt; /* Размер шрифта в пунктах */ 
+                 color:orangered
+                 }
+        .class06 {font-size: 24pt; color:brown}
+        .class07 {font-size: 14pt;color:crimson}
+        .class08 {font-size: 22pt;color:darkgoldenrod}
+        .class09.class11{font-size: 12pt;color:chartreuse}
+        .class10 .class12{font-size: 10pt;color:coral}
+        
         
     </style>
 </head>
 <body>
-    <p>Часть 1<br>
+    <h2>Часть 1<br></h2>
         Пишем пример селектора и описание в несколько слов, какие элементы будут выбраны на странице.
     </p>
     <p>Классификация селекторов</p>
@@ -62,37 +65,35 @@
         {тег 2 class=”класс2”}<br>
         {/тег1}
     </p>
-    <p>
-        Часть 2<br>
+    <h2>Часть 2<br></h2>
         Нужно создать 10 любых элементов с текстом на странице и каждому из них назначить разный цвет, с помощью разных селекторов.<br>
-        Вариант реализации – описание элемента, ожидаемый результат – атрибуты и их свойства, демонстрация работы селектора.<br>
     </p>
-    <a href=#>Элемент 1. Ссылка.</a>
-    <h1>Элемент 2.Заголовок первого уровня</h1> 
-    <h2>Элемент 3.Заголовок второго уровня</h2> 
-    <h3>Элемент 4.Заголовок третьего уровня</h3>
+    <a href=# id="ident01">Элемент 1. Ссылка.</a>
+    <h1 id="ident02">Элемент 2.Заголовок первого уровня</h1> 
+    <h2 class="class03">Элемент 3.Заголовок второго уровня</h2> 
+    <h3 class="class04">Элемент 4.Заголовок третьего уровня</h3>
     
-    <ul>Элемент 5. Маркированный список
+    <ul class="class09 class11">Элемент 5. Маркированный список
         <li>Элемент маркированного списка 1</li>
         <li>Элемент маркированного списка 2</li>
     </ul> 
      
-    <ol>Элемент 6. Нумерованый список 
-        <li>Элемент нумерованного списка 1</li>
+    <ol class="class10">Элемент 6. Нумерованый список 
+        <li class="class12">Элемент нумерованного списка 1</li>
         <li>Элемент нумерованного списка 2</li>
     </ol> 
 
-    <p>
+    <p class="class05">
         Элемент 7. Абзац.Внешний вид HTML разметки во многом определяется CSS стилями.
     </p> 
          
-    <p>Элемент 8. Абзац. Тем не менее, некоторые веб-мастера предпочитают не использовать стили на первых этапах проекта.
+    <p class="class06">Элемент 8. Абзац. Тем не менее, некоторые веб-мастера предпочитают не использовать стили на первых этапах проекта.
 
     </p>
     <div> 
         Элемент 9. Блок текста div 
     </div>
-    <p>
+    <p class="class07">
         Элемент 10. Еще один абзац
     </p>
 
